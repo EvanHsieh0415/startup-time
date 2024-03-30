@@ -16,7 +16,10 @@
 	"environment": "client",
 	"entrypoints": {
 		"client": [
-			"net.zhuruoling.startup_time.Mod"
+          "icu.takeneko.startup_time.Mod"
+		],
+		"fabric-datagen": [
+			"icu.takeneko.startup_time.Mod"
 		]
 	},
 	"accessWidener": "aw.accesswidener",
@@ -25,7 +28,8 @@
 	],
 	"depends": {
 		"fabricloader": "*",
-		"minecraft": ">=1.20",
-		"java": ">=17"
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
 	}
 }

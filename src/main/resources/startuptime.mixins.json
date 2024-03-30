@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "net.zhuruoling.startup_time.mixin",
+	"package": "icu.takeneko.startup_time.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
-		"MainMenuMixin"
+      "MainMenuMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
