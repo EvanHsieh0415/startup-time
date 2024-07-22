@@ -26,9 +26,8 @@ public class MainMenuMixin {
     void inj(CallbackInfo ci){
         if (!isStartup)return;
         long timeMillis = ManagementFactory.getRuntimeMXBean().getUptime();
-        Text title = Text.of(String.format("游戏启动用时: %.1f秒",timeMillis / 1000.0));
-        Text content = Text.of("打败了全国99.9%的玩家");
-        SystemToast.show(this.toastManager, SystemToast.Type.PERIODIC_NOTIFICATION, title, content);
+        Text title = Text.translatable("startup_time.time",timeMillis / 1000.0);
+        SystemToast.show(this.toastManager, SystemToast.Type.PERIODIC_NOTIFICATION, title, Text.empty());
         isStartup = false;
     }
 }

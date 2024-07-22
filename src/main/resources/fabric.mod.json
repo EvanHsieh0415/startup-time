@@ -8,10 +8,9 @@
 		"ZhuRuoLing"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/ZhuRuoLing/startup-time"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/icon.png",
 	"environment": "client",
 	"entrypoints": {
